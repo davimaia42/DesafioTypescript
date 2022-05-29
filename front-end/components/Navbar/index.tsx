@@ -3,7 +3,13 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <HStack w="100vw" h="6vh" bg="purple.500" paddingLeft="3vw">
+        <HStack
+            w="100vw"
+            h="6vh"
+            bg="purple.500"
+            paddingLeft="3vw"
+            boxShadow="sm"
+        >
             <Center>
                 <Text
                     fontFamily="Inter"
