@@ -2,6 +2,13 @@ import { theme, Theme } from '@chakra-ui/react';
 
 const customTheme: Theme = {
     ...theme,
+    styles: {
+        global: (props) => ({
+            body: {
+                bg: '#F5F5F5',
+            },
+        }),
+    },
     fonts: {
         body: 'Inter, sans-serif',
         heading: 'Inter, sans-serif',
@@ -20,6 +27,8 @@ const customTheme: Theme = {
     },
     fontSizes: {
         ...theme.fontSizes,
+        sm: '15px',
+        xs: '14px',
     },
     colors: {
         ...theme.colors,
@@ -27,6 +36,14 @@ const customTheme: Theme = {
             ...theme.colors.purple,
             500: '#510083',
         },
+    },
+    shadows: {
+        ...theme.shadows,
+        md: '0px 4px 20px rgba(0, 0, 0, 0.25)',
+    },
+    borders: {
+        ...theme.borders,
+        '1px': '1px solid black',
     },
 };
 
