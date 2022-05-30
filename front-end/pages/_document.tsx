@@ -13,6 +13,7 @@ class MyDocument extends Document<DocumentProps> {
         return (
             <Html>
                 <Head>
+                    <title>Products</title>
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"

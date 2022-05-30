@@ -1,7 +1,7 @@
 import { VStack, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 
-const ProductTile = () => {
+const ProductTile = (props) => {
     return (
         <VStack
             w="12vw"
@@ -17,8 +17,8 @@ const ProductTile = () => {
             <Image
                 width="13vw"
                 height="11.3vh"
-                src="https://media.architecturaldigest.com/photos/62154614ce63dd788a528f77/16:9/w_2560%2Cc_limit/GettyImages-1277369090.jpg"
-                alt="dan abramov"
+                src={props.image}
+                alt="product image"
             />
             <Text
                 fontFamily="Inter"
@@ -27,7 +27,7 @@ const ProductTile = () => {
                 fontSize="sm"
                 color="black"
             >
-                Product Name 1
+                {props.name}
             </Text>
             <Text
                 fontFamily="Inter"
@@ -36,7 +36,7 @@ const ProductTile = () => {
                 fontSize="xs"
                 color="black"
             >
-                Brand Name 1
+                {props.brand}
             </Text>
             <Text
                 fontFamily="Inter"
@@ -45,7 +45,7 @@ const ProductTile = () => {
                 fontSize="2xl"
                 color="black"
             >
-                R$ 765.00
+                R$ {props.price}
             </Text>
         </VStack>
     );
